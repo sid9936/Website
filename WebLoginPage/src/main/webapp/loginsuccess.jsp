@@ -16,7 +16,7 @@
 	DaoSetup loginDao = new DaoSetup();
 	boolean status = loginDao.validate(id);
 	if (status) {
-		out.print("<h1>Welcome. You have logined successfully !</h1>");
+		out.print("<h1>Welcome. You have logged in successfully !</h1>");
 		response.sendRedirect("Member.jsp");
 	}else{
 		out.print("<h4>Incorrect credentials. Retry login.</h4>");
